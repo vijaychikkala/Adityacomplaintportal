@@ -1,0 +1,167 @@
+body {
+  background: #2c3e50;
+}
+button{
+  position: absolute;
+  right: 15px;
+  color: red;
+  text-align: center;
+}
+section.school-finder {
+  padding: 40px 0;
+  font-family: 'Open Sans', sans-serif;
+  width: 1260px;
+  margin: 0 auto;
+}
+section.school-finder h2 {
+  color: #ecf0f1;
+}
+section.school-finder .school-container {
+  position: relative;
+  height: 400px;
+  clear: both;
+  overflow: hidden;
+  margin-top: 30px;
+}
+section.school-finder li {
+  display: inline-block;
+  margin-left: 0.5%;
+  width: 200px;
+  min-height: 200px;
+}
+section.school-finder li .school-block {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  min-height: 150px;
+  min-width: 170px;
+  right: auto;
+  cursor: pointer;
+  background: #1abc9c;
+}
+section.school-finder li .school-block .state {
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+  width: 96%;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.school-finder li .school-block .state span {
+  display: block;
+}
+section.school-finder li .school-block .state .img {
+  min-height: 80px;
+  position: relative;
+}
+section.school-finder li .school-block .state img {
+  opacity: 0.7;
+  border-radius: 25%;
+}
+section.school-finder li .school-block.active {
+  z-index: 100;
+  cursor: inherit;
+}
+section.school-finder li .school-block .schools {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 1%;
+  overflow: hidden scroll;
+  position: relative;
+}
+section.school-finder li .school-block .schools ul.school-list {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  top: 5%;
+}
+section.school-finder li .school-block .schools ul.school-list li {
+  color: #fff;
+  display: block;
+  margin-right: 0;
+  width: 100%;
+  min-height: inherit;
+  padding: 35px 0;
+  border-bottom: 1px dashed #fff;
+  background-repeat: repeat no-repeat;
+  background-position: bottom;
+}
+section.school-finder li .school-block .schools ul.school-list li div.location {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 300px;
+}
+section.school-finder li .school-block .schools ul.school-list li div.location span.city {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align-last: center;
+}
+section.school-finder li .school-block .schools ul.school-list li div.location span.address {
+  display: block;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+section.school-finder li .school-block .schools ul.school-list li div.location span.address:hover {
+  opacity: 0.8;
+}
+section.school-finder li .school-block .schools ul.school-list li div.learn-more {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7%;
+  float:right;
+  color: #fff;
+}
+section.school-finder li .school-block .schools ul.school-list li div.learn-more a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+section.school-finder li .school-block .schools ul.school-list.fade {
+  opacity: 1;
+  top: 0;
+  transition: all 400ms ease-out;
+}
+section.school-finder .closeSchool {
+  cursor: pointer;
+  display: inline-block;
+  color: #ecf0f1;
+  font-size: 1em;
+  float: right;
+  margin-right: 14px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 15px;
+  opacity: 0;
+  transition: top 0.8s ease, opacity 1s ease;
+}
+section.school-finder .closeSchool .icon-arrow-left {
+  font-size: 1.4em;
+  vertical-align: sub;
+}
+section.school-finder .closeSchool.fade {
+  opacity: 1;
+  top: 0;
+}
+section.school-finder .map {
+  display: inline-block;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: all 400ms ease-out;
+  z-index: 101;
+  width: 100%;
+  cursor: pointer;
+}
+section.school-finder .map img {
+  float: right;
+  box-shadow: -6px 0 24px rgba(0, 0, 0, 0.42);
+}
+section.school-finder .map.slide {
+  right: 0;
+}

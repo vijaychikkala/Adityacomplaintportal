@@ -1,0 +1,127 @@
+link(rel='stylesheet', href='stylesheets/style1.css')
+link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300', rel='stylesheet', type='text/css')
+// bootstrap links
+link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+link(rel='stylesheet', href='https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css')
+link(rel='stylesheet', href='https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css')
+link(rel='stylesheet', href='stylesheets/style1.css')
+script(src='javascripts/block.js')
+br
+.button
+  button.btn-info(onclick='ADMIN_PAGE()') LOGIN
+section.school-finder
+ .container
+    center
+      img(src='images/logo-SMALL.png', height='120', width='200')
+      hr(width='360')
+      h2 Aditya Complaint Portal
+    .closeSchool
+      span.icon-arrow-left
+      | Back
+    .school-container
+      ul
+        li
+          .school-block
+            .state
+              span Vice Chairman
+            .schools
+              ul.school-list
+                li
+                  .location
+                    span.city Sri. N Sathish Reddy 
+                    .img
+                      img(src='images/Satish_Reddy.png', alt='HOD-1', width='130', height='140')
+                    span.address
+                      br
+                      | Aditya Educational Institutions
+                  .learn-more
+                    a.btn-outline(href='') Click to Post a Complaint
+        li
+        // </> STATE BLOCK
+        li
+          .school-block
+            .state
+              span Principal
+            .schools
+              ul.school-list
+                li
+                  .location
+                    span.city Dr.M.Sreenivas Reddy
+                    span.address
+                      img(src='images/aec principal.png', alt='aec_Principal', width='130', height='140')
+                      br
+                      br
+                      | Aditya Engineering College
+                  .learn-more
+                    a.btn-outline(href='') Click to Post a Complaint
+                li
+                  .location
+                    span.city Principal Name
+                    span.address
+                      img(src='images/149071.png', alt='aec_Principal', width='130', height='140')
+                      br
+                      br
+                      | Aditya College of Engineering & Technolgoy
+                  .learn-more
+                    a.btn-outline(href='') Click to Post a Complaint
+                li
+                  .location
+                    span.city Dr.A.Ramesh
+                    span.address
+                      img(src='images/acoe_principal.jpg', alt='acoe_Principal', width='130', height='140')
+                      br
+                      br
+                      | Aditya College of Engineering
+                  .learn-more
+                    a.btn-outline(href='') Click to Post a Complaint
+        li
+        // </> STATE BLOCK
+        li
+          .school-block
+            .state
+              span HOD
+            .schools
+              ul.school-list
+                li
+                  .location
+                    span.city PRINCIPAL
+                    br
+                    input(type='radio', name='principal', value='AEC', checked='')
+                    |  ADITYA ENGINEERING COLLEGE
+                    br
+                    input(type='radio', name='principal', value='ACET')
+                    |  ADITYA COLLEGE OF ENGINEERING & TECHNOLOGY
+                    br
+                    input(type='radio', name='principal', value='ACOE')
+                    |  ADITYA COLLEGE OF ENGINEERING
+                    br
+                li
+                  .location
+                    span.city
+                      | HOD
+                      br
+                      input(type='radio', name='branch', value='IT', checked='')
+                      | IT   
+                      input(type='radio', name='branch', value='CSE')
+                      | CSE   
+                      input(type='radio', name='branch', value='ECE')
+                      | ECE   
+                      input(type='radio', name='branch', value='MECH')
+                      | MECH   
+                      input(type='radio', name='branch', value='EEE')
+                      | EEE        
+                      input(type='radio', name='branch', value='CIVIL')
+                      | CIVIL   
+                      input(type='radio', name='branch', value='PT')
+                      | PT   
+                      input(type='radio', name='branch', value='AGRI')
+                      | AGRI   
+                      input(type='radio', name='branch', value='MIN')
+                      | MIN
+                  .learn-more
+                    a.btn-outline(href='') Click to Post a Complaint
+        li
+        // </> STATE BLOCK
+        // </> SCHOOL CONTAINER
